@@ -4,6 +4,10 @@ import {
   Route
 } from 'react-router-dom';
 import NavBar from './components/NavBar'
+import About from './components/About'
+import Projects from './components/Projects'
+import Blog from './components/Blog'
+import Resume from './components/Resume'
 
 
 function App() {
@@ -11,10 +15,10 @@ function App() {
     <Router>
       <div>
         <NavBar />
-        <Route exact path='/' render={() => <div>Home</div>} />
-        <Route path='/projects' render={() => <div>Projects</div>} />
-        <Route path='/blog' render={() => <div>Blog</div>} />
-        <Route path='/resume' render={() => <div>Resume</div>} />
+        <Route exact path='/' component={About} />
+        <Route exact path='/projects' component={Projects} />
+        <Route exact path='/blog' component={Blog} />
+        <Route exact path='/resume' component={Resume} />
       </div>
     </Router>
   );
