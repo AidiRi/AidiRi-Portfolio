@@ -7,7 +7,7 @@ const Projects = () => {
   <Fragment>
     <Thumbnail Title={"Title"} Img={Img} Desc={"This is a project description."}/>
     <Thumbnail Title={"Title"} Img={Img} Desc={"This is a project description."}/>
-    <Thumbnail Title={"Title"} Img={Img} Desc={"This is a project description."}/>
+    <Thumbnail Title={"Title"} Img={Img} Desc={"This is a project description. This is a project description. This is a project description. This is a project description."}/>
   </Fragment>
   )
 }

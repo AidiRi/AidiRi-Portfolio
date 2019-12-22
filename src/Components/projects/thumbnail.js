@@ -5,15 +5,18 @@ import './style.css'
 const Thumbnail = (props) => {
   return(
 
-    <div className="container">
+    <section className="project-container">
       <Link to="">
-        <div className="project-image">
-          <img src={props.Img} alt="Project Image" />
-        </div>
-        <div className="project-title">{props.Title}</div>
-        <div className="project-description">{props.Desc}</div>
+        <header className="project-title">{props.Title}</header>
       </Link>
-    </div>
+
+      <Link to="">
+        <img className="project-image" src={props.Img} alt="Project Image" />
+      </Link>
+
+      <p className="project-description">{props.Desc}</p>
+
+    </section>
 
   )
 }
