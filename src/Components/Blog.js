@@ -1,8 +1,13 @@
 import React from 'react';
+import Article from './blogs/article'
 
-const Blog = () => {
+const Blog = (props) => {
   return(
-    <div>Blog!</div>
+  <main>
+    <Article Title={"Read This Blog Post"} Summary={"This is a really thorough and creative summary of this blog post. "}/>
+    <Article Title={"Read This Blog Post"} Summary={"This is a really thorough and creative summary of this blog post. "}/>
+    <Article Title={"Read This Blog Post"} Summary={"This is a really thorough and creative summary of this blog post. "}/>
+  </main>
   )
 }
 
