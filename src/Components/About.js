@@ -1,15 +1,15 @@
 import React from 'react';
 import Projects from './Projects'
 import Writing from './Blog'
+import Contact from './about/contact.js'
+
 const About = (props) => {
   return(
     <section >
       <header> Aidi Rivera </header>
       <p> I make things. Code is one of those things.</p>
 
-      <section>
-        Icons! Icons! Icons! Icons!
-      </section>
+      <Contact/>
 
       <h2>About</h2>
       <p>Cat ipsum dolor sit amet, cereal boxes make for five star accommodation . Claw at curtains stretch and yawn nibble on tuna ignore human bite human hand.</p>
