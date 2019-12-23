@@ -1,5 +1,6 @@
-.container {
-  display: inline-flex;
+section.project-container {
+  display: flex;
+  flex-direction: column;
   height: 350px;
   width: 300px;
   background-color: whitesmoke;
@@ -7,11 +8,12 @@
   margin: 30px;
 }
 
-.container div{
+.project-container a{
   color: black;
+  text-decoration: underline;
 }
 
-.project-image img {
+img.project-image {
   display: block;
   margin: 0 auto;
   max-width: 70%;
