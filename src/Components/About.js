@@ -1,7 +1,7 @@
 import React from 'react';
 import Projects from './Projects'
 import Writing from './Blog'
-import Contact from './about/contact.js'
+import Contact from './about/contact'
 
 const About = (props) => {
   return(
