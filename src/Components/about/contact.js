@@ -1,29 +1,22 @@
-import React from 'react';
-import {BlankIcon, SpareIcon} from './icons'
+import React, {Fragment} from 'react';
+import {BlankIcon, SpareIcon} from './icons';
+import IconData from './iconData.json';
+import Icon from './Icon'
+
 //TODO: Create Icon component for each contact icon to feed details/props into
 //<Icon Title={} Link={} Svg={}/>
-const Contact = (props) => {
-  return(
-    <div>
-      <a title="Link 1" href="http://www.https://github.com/AidiRi" target="_blank">
-        <BlankIcon/>
-      </a>
-      <a title="Link 2" href="http://www.https://github.com/AidiRi" target="_blank">
-        <BlankIcon/>
-      </a>
-      <a title="Link 3" href="http://www.https://github.com/AidiRi" target="_blank">
-        <BlankIcon/>
-      </a>
-      <a title="Link 4" href="http://www.https://github.com/AidiRi" target="_blank">
-        <BlankIcon/>
-      </a>
-      <a title="Link 5" href="http://www.https://github.com/AidiRi" target="_blank">
-        <BlankIcon/>
-      </a>
-    </div>
 
+const displayData = () => {
+  return Object.keys(IconData).map((icon, index) => {
+    return <Icon key={index} Title={icon.title} Link={icon.link}/>
+  });
+};
+
+const Contact = (props) => {
+  return (
+    displayData()
   )
-}
+};
 
 const styles ={
     Header: {
